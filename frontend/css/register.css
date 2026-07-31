@@ -1,0 +1,81 @@
+body {
+    background: linear-gradient(135deg, #071126, #0f3d7a);
+    min-height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.navbar {
+    padding: 20px 0;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.register-card {
+    width: 100%;
+    max-width: 850px;
+    background: rgba(255,255,255,.08);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,.35);
+}
+
+.register-card h2 {
+    color: white;
+    font-weight: 700;
+}
+
+.register-card p,
+.form-label,
+.form-check-label {
+    color: #e5e7eb;
+}
+
+.form-control {
+    height: 50px;
+    border-radius: 12px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #2563eb;
+}
+
+.btn-primary {
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.login-link {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+hr {
+    border-color: rgba(255,255,255,.15);
+    margin: 30px 0;
+}
