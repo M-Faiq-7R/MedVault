@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedVault | Patient Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/patient-dashboard.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-shield-heart"></i>
+                <span>MedVault</span>
+            </div>
+            <nav>
+                <a href="#" class="active">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-file-medical"></i>
+                    Medical Records
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Appointments
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-prescription-bottle-medical"></i>
+                    Prescriptions
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-user"></i>
+                    My Profile
+                </a>
+            </nav>
+            <div class="sidebar-bottom">
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+                <a href="patient-login.html" class="logout">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header class="topbar">
+                <div class="mobile-logo">
+                    <i class="fa-solid fa-shield-heart"></i>
+                    <span>MedVault</span>
+                </div>
+                <div class="topbar-right">
+                    <button class="notification">
+                        <i class="fa-solid fa-bell"></i>
+                        <span></span>
+                    </button>
+                    <div class="profile">
+                        <div class="avatar">MF</div>
+                        <div class="profile-info">
+                            <strong>Muhammad Faiq</strong>
+                            <small>Patient</small>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="content">
+                <div class="welcome">
+                    <div>
+                        <p class="greeting">Welcome back,</p>
+                        <h1>Muhammad Faiq 👋</h1>
+                        <p>Here's an overview of your health information.</p>
+                    </div>
+                    <div class="date">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>Today</span>
+                    </div>
+                </div>
+                <div class="stats">
+                    <div class="stat-card">
+                        <div class="stat-icon blue">
+                            <i class="fa-solid fa-file-medical"></i>
+                        </div>
+                        <div>
+                            <span>Medical Records</span>
+                            <h2>08</h2>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon green">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+                        <div>
+                            <span>Appointments</span>
+                            <h2>02</h2>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon purple">
+                            <i class="fa-solid fa-prescription-bottle-medical"></i>
+                        </div>
+                        <div>
+                            <span>Prescriptions</span>
+                            <h2>04</h2>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon orange">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <div>
+                            <span>Doctors</span>
+                            <h2>03</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-grid">
+                    <section class="panel appointments">
+                        <div class="panel-header">
+                            <div>
+                                <h2>Upcoming Appointments</h2>
+                                <p>Your scheduled appointments</p>
+                            </div>
+                            <a href="#">View All</a>
+                        </div>
+                        <div class="appointment">
+                            <div class="doctor-icon">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div class="appointment-info">
+                                <h3>Dr. Sarah Ahmed</h3>
+                                <p>General Physician</p>
+                                <div class="appointment-time">
+                                    <span>
+                                        <i class="fa-regular fa-calendar"></i>
+                                        05 Aug 2026
+                                    </span>
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        10:30 AM
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="status upcoming">Upcoming</span>
+                        </div>
+                        <div class="appointment">
+                            <div class="doctor-icon">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div class="appointment-info">
+                                <h3>Dr. Ali Khan</h3>
+                                <p>Cardiologist</p>
+                                <div class="appointment-time">
+                                    <span>
+                                        <i class="fa-regular fa-calendar"></i>
+                                        14 Aug 2026
+                                    </span>
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        02:00 PM
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="status upcoming">Upcoming</span>
+                        </div>
+                    </section>
+                    <section class="panel prescriptions">
+                        <div class="panel-header">
+                            <div>
+                                <h2>Recent Prescriptions</h2>
+                                <p>Your latest medications</p>
+                            </div>
+                            <a href="#">View All</a>
+                        </div>
+                        <div class="prescription">
+                            <div class="medicine-icon">
+                                <i class="fa-solid fa-pills"></i>
+                            </div>
+                            <div>
+                                <h3>Medication A</h3>
+                                <p>500mg · Twice daily</p>
+                            </div>
+                            <span>Active</span>
+                        </div>
+                        <div class="prescription">
+                            <div class="medicine-icon">
+                                <i class="fa-solid fa-pills"></i>
+                            </div>
+                            <div>
+                                <h3>Medication B</h3>
+                                <p>250mg · Once daily</p>
+                            </div>
+                            <span>Active</span>
+                        </div>
+                        <div class="prescription">
+                            <div class="medicine-icon">
+                                <i class="fa-solid fa-pills"></i>
+                            </div>
+                            <div>
+                                <h3>Medication C</h3>
+                                <p>100mg · Once daily</p>
+                            </div>
+                            <span>Expired</span>
+                        </div>
+                    </section>
+                </div>
+                <section class="quick-actions">
+                    <h2>Quick Actions</h2>
+                    <div class="actions">
+                        <a href="#">
+                            <i class="fa-solid fa-file-medical"></i>
+                            <span>View Medical Records</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-calendar-plus"></i>
+                            <span>Book Appointment</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-user-pen"></i>
+                            <span>Update Profile</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
