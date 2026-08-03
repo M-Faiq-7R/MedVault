@@ -10,6 +10,7 @@ async function registerPatient(req, res) {
             email,
             password,
             phone,
+            cnic,
             gender,
             dateOfBirth
         } = req.body;
@@ -21,15 +22,22 @@ async function registerPatient(req, res) {
             email,
             hashedPassword,
             phone,
+            cnic,
             gender,
             dateOfBirth,
             (err, patientId) => {
 
                 if (err) {
 
-                    if (err.message.includes("UNIQUE")) {
+                    if (err.message.includes("patients.email")) {
                         return res.status(409).json({
                             message: "Email already exists."
+                        });
+                    }
+
+                    if (err.message.includes("patients.cnic")) {
+                        return res.status(409).json({
+                            message: "CNIC already exists."
                         });
                     }
 

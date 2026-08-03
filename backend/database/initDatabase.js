@@ -7,6 +7,7 @@ CREATE TABLE IF NOT EXISTS patients (
     email TEXT NOT NULL UNIQUE,
     password TEXT NOT NULL,
     phone TEXT,
+    cnic TEXT NOT NULL UNIQUE,
     gender TEXT CHECK(gender IN ('Male', 'Female', 'Other')),
     dateOfBirth TEXT,
     createdAt DATETIME DEFAULT CURRENT_TIMESTAMP

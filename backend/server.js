@@ -1,3 +1,4 @@
+const path = require("path");
 const express = require("express");
 const db = require("./database/database");
 const patientRoutes = require("./routes/patientRoutes");
@@ -7,6 +8,9 @@ const PORT = 3000;
 
 // Middleware
 app.use(express.json());
+
+// Serve static files from the frontend directory
+app.use(express.static(path.join(__dirname, "../frontend")));
 
 // Routes
 app.use("/api/patients", patientRoutes);
