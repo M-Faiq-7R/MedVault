@@ -31,6 +31,31 @@ function createPatient(
 
 }
 
+function getPatientByEmail(email) {
+
+    return new Promise((resolve, reject) => {
+
+        const query = `
+            SELECT *
+            FROM patients
+            WHERE email = ?
+        `;
+
+        db.get(query, [email], (error, row) => {
+
+            if (error) {
+                reject(error);
+            } else {
+                resolve(row);
+            }
+
+        });
+
+    });
+
+}
+
 module.exports = {
-    createPatient
+    createPatient,
+    getPatientByEmail
 };
