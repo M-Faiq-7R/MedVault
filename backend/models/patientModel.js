@@ -55,7 +55,27 @@ function getPatientByEmail(email) {
 
 }
 
+function getPatientById(id) {
+    return new Promise((resolve, reject) => {
+
+        db.get(
+            "SELECT id, fullName, email, phone, gender, dateOfBirth, cnic FROM patients WHERE id = ?",
+            [id],
+            (err, row) => {
+
+                if (err) {
+                    return reject(err);
+                }
+
+                resolve(row);
+            }
+        );
+
+    });
+}
+
 module.exports = {
     createPatient,
-    getPatientByEmail
+    getPatientByEmail,
+    getPatientById
 };

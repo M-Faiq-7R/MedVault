@@ -87,6 +87,9 @@ async function loginPatient(req, res) {
             });
         }
 
+        // Store patient ID in session
+        req.session.patientId = patient.id;
+
         res.status(200).json({
             message: "Login successful.",
             patient: {
@@ -107,11 +110,32 @@ async function loginPatient(req, res) {
     }
 
 }
+
+async function getCurrentPatient(req, res) {
+
+    try {
+
+        const patient = await patientModel.getPatientById(req.session.patientId);
+
+        res.status(200).json(patient);
+
+    } catch (error) {
+
+        console.error(error);
+
+        res.status(500).json({
+            message: "Internal server error."
+        });
+
+    }
+
+}
     
 
 
 
 module.exports = {
     registerPatient,
-    loginPatient
+    loginPatient,
+    getCurrentPatient
 };
