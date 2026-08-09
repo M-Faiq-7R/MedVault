@@ -7,5 +7,6 @@ const patientController = require("../controllers/patientController");
 router.post("/register", patientController.registerPatient);
 router.post("/login", patientController.loginPatient);
 router.get("/me", requireLogin, patientController.getCurrentPatient);
+router.post("/logout", requireLogin, patientController.logoutPatient);
 
 module.exports = router;

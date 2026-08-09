@@ -88,6 +88,13 @@ async function loginPatient(req, res) {
         }
 
         // Store patient ID in session
+        req.session.regenerate((err) => {
+        if (err) {
+            return res.status(500).json({
+                message: "Unable to create session."
+            });
+        }
+
         req.session.patientId = patient.id;
 
         res.status(200).json({
@@ -98,6 +105,7 @@ async function loginPatient(req, res) {
                 email: patient.email
             }
         });
+    });
 
     } catch (error) {
 
@@ -130,6 +138,22 @@ async function getCurrentPatient(req, res) {
     }
 
 }
+
+function logoutPatient(req, res) {
+    req.session.destroy((err) => {
+        if (err) {
+            return res.status(500).json({
+                message: "Failed to logout."
+            });
+        }
+
+        res.clearCookie("connect.sid");
+
+        res.json({
+            message: "Logged out successfully."
+        });
+    });
+};
     
 
 
@@ -137,5 +161,6 @@ async function getCurrentPatient(req, res) {
 module.exports = {
     registerPatient,
     loginPatient,
-    getCurrentPatient
+    getCurrentPatient,
+    logoutPatient
 };
