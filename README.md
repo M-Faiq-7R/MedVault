@@ -1,205 +1,137 @@
 # 🏥 MedVault
 
-**MedVault** is a secure hospital data management system designed to simplify patient record management while emphasizing security, scalability, and maintainability. The project follows the MVC (Model-View-Controller) architecture and is being developed as a full-stack web application using modern web technologies.
+**MedVault** is a portfolio-focused full-stack Hospital Management System built with **Node.js, Express.js, SQLite3, Bootstrap 5, and Vanilla JavaScript** using the **MVC architecture**.
 
-> **Status:** 🚧 In Active Development
-
----
-
-## ✨ Features
-
-### Current Features
-
-* Patient Registration System
-* Secure password hashing using **bcrypt**
-* SQLite database integration
-* Express.js REST API
-* MVC architecture
-* Duplicate email detection
-* Duplicate CNIC detection
-* Browser-to-backend communication using Fetch API
-* SweetAlert2 notifications
-* Form validation
-* Prevention of duplicate form submissions
-
-### Planned Features
-
-* Patient Login & Authentication
-* JWT-based Authorization
-* Protected Patient Dashboard
-* Medical Record Management
-* File Uploads
-* Doctor Portal
-* Admin Dashboard
-* Appointment Scheduling
-* Role-Based Access Control
-* Encryption for Sensitive Medical Data
-* Audit Logs
+The project is being developed incrementally to simulate a real-world software engineering workflow while emphasizing clean architecture, security, and maintainability.
 
 ---
 
-## 🛠 Tech Stack
+## 🚧 Project Status
+
+**Active Development**
+
+MedVault is currently under active development. Features are being implemented in phases with a focus on production-oriented design, secure coding practices, and code quality.
+
+---
+
+## ✨ Current Features
+
+* Patient Registration
+* Secure Password Hashing (bcrypt)
+* Patient Login
+* Session-Based Authentication
+* Protected Routes
+* Personalized Dashboard
+* Logout Functionality
+* Session Regeneration (Protection against Session Fixation)
+
+---
+
+## 🛠️ Tech Stack
 
 ### Frontend
 
 * HTML5
 * CSS3
 * Bootstrap 5
-* JavaScript (ES6+)
+* Vanilla JavaScript
 * SweetAlert2
 
 ### Backend
 
 * Node.js
 * Express.js
-
-### Database
-
 * SQLite3
-
-### Security
-
 * bcrypt
+* express-session
 
-### Version Control
+### Architecture
 
-* Git
-* GitHub
-
----
-
-## 📁 Project Structure
-
-```text
-MedVault/
-│
-├── backend/
-│   ├── controllers/
-│   ├── database/
-│   ├── models/
-│   ├── routes/
-│   ├── server.js
-│   └── package.json
-│
-├── frontend/
-│   ├── assets/
-│   ├── css/
-│   ├── html/
-│   └── js/
-│
-└── README.md
-```
+* MVC (Model–View–Controller)
 
 ---
 
-## 🚀 Current Workflow
+## 🎯 Project Goals
 
-```text
-Patient Registration
-        │
-        ▼
-Frontend Form
-        │
-        ▼
-Fetch API
-        │
-        ▼
-Express Route
-        │
-        ▼
-Controller
-        │
-        ▼
-Password Hashing
-        │
-        ▼
-Model
-        │
-        ▼
-SQLite Database
-        │
-        ▼
-JSON Response
-        │
-        ▼
-Frontend Notification
-```
+This project is intended to:
+
+* Learn full-stack web development through real-world implementation.
+* Practice clean and scalable software architecture.
+* Build secure authentication and session management.
+* Explore web application security concepts in a controlled environment.
+* Continuously improve through iterative development.
 
 ---
 
-## ⚙️ Installation
+## 🤖 AI Transparency
 
-Clone the repository:
+This project is developed with the assistance of AI as a software engineering mentor and pair programmer.
 
-```bash
-git clone https://github.com/M-Faiq-7R/MedVault.git
-```
+AI is used to:
 
-Move into the project:
+* Discuss software architecture and design decisions.
+* Explain programming concepts.
+* Review and improve code quality.
+* Suggest best practices.
+* Assist with repetitive implementation tasks.
 
-```bash
-cd MedVault
-```
-
-Install backend dependencies:
-
-```bash
-cd backend
-npm install
-```
-
-Start the development server:
-
-```bash
-node server.js
-```
-
-Open your browser:
-
-```
-http://localhost:3000
-```
+Every feature is reviewed, understood, tested, and integrated manually before becoming part of the project. The objective is to learn software engineering principles—not simply generate code.
 
 ---
 
-## 📌 Project Goals
+## 🔒 Security Research
 
-This project aims to:
+MedVault also serves as a personal security learning environment.
 
-* Learn full-stack web development
-* Build secure authentication systems
-* Apply software engineering principles
-* Develop scalable backend architecture
-* Practice secure handling of sensitive healthcare information
+The application is intentionally used to study and understand topics such as:
 
----
+* Authentication & Authorization
+* Session Management
+* Session Hijacking
+* Session Fixation
+* Cookie Security
+* Password Hashing
+* Input Validation
+* OWASP-inspired web security concepts
 
-## 🗺 Roadmap
-
-* [x] Project setup
-* [x] MVC architecture
-* [x] SQLite integration
-* [x] Patient registration API
-* [x] Password hashing
-* [x] Frontend-backend integration
-* [ ] Patient login
-* [ ] JWT authentication
-* [ ] Protected dashboard
-* [ ] Medical record CRUD
-* [ ] Doctor portal
-* [ ] Admin panel
-* [ ] File uploads
-* [ ] Encryption layer
-* [ ] Deployment
+All security testing is performed **only against this self-owned application in a local development environment** for educational purposes.
 
 ---
 
-## 👨‍💻 Author
+## 📌 Roadmap
 
-**Muhammad Faiq**
+### ✅ Phase 1
 
-GitHub: https://github.com/M-Faiq-7R
+* Authentication System
+* Session Management
+* Patient Dashboard
+
+### 🚧 Phase 2
+
+* Patient Profile Management
+* Appointment Management
+* Medical Records
+* Prescriptions
+
+### 📅 Future
+
+* Doctor Portal
+* Admin Dashboard
+* Role-Based Access Control (RBAC)
+* File Uploads
+* Email Notifications
+* Audit Logging
+* API Documentation
+* Docker Deployment
 
 ---
 
-> **Note:** MedVault is an educational portfolio project under active development. Features and architecture will continue to evolve as the project grows.
+## ⚠️ Disclaimer
+
+This project is intended for educational and portfolio purposes. Although it follows production-oriented development practices, it is **not intended for handling real patient data** in its current state and should not be considered production-ready without additional security, testing, compliance, and deployment work.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
