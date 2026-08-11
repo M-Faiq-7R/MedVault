@@ -35,4 +35,33 @@ async function loadPatientData() {
     }
 }
 
+
+const logoutBtn = document.querySelector(".logout");
+
+logoutBtn.addEventListener("click", async (event) => {
+    event.preventDefault();
+
+    try {
+        const response = await fetch("/api/patients/logout", {
+            method: "POST"
+        });
+
+        if (!response.ok) {
+            throw new Error("Logout failed.");
+        }
+
+        window.location.href = "patient_login.html";
+
+    } catch (error) {
+        console.error(error);
+
+        Swal.fire({
+            icon: "error",
+            title: "Logout Failed",
+            text: "Please try again."
+        });
+    }
+});
+
 loadPatientData();
+
