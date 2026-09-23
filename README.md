@@ -1,137 +1,128 @@
 # 🏥 MedVault
 
-**MedVault** is a portfolio-focused full-stack Hospital Management System built with **Node.js, Express.js, SQLite3, Bootstrap 5, and Vanilla JavaScript** using the **MVC architecture**.
-
-The project is being developed incrementally to simulate a real-world software engineering workflow while emphasizing clean architecture, security, and maintainability.
+> A full-stack web application created as a learning project to explore web application architecture and security concepts.
 
 ---
 
-## 🚧 Project Status
+## 🧠 About
 
-**Active Development**
+**MedVault** is a medical-themed web application developed as a hands-on learning project.
 
-MedVault is currently under active development. Features are being implemented in phases with a focus on production-oriented design, secure coding practices, and code quality.
+The main purpose of the project was to explore how common web application components fit together and to study fundamental concepts related to **authentication, sessions, password security, APIs, and application architecture**.
 
----
-
-## ✨ Current Features
-
-* Patient Registration
-* Secure Password Hashing (bcrypt)
-* Patient Login
-* Session-Based Authentication
-* Protected Routes
-* Personalized Dashboard
-* Logout Functionality
-* Session Regeneration (Protection against Session Fixation)
+The project was developed with significant AI assistance. Rather than presenting it as a fully hand-written application, I use MedVault primarily as a way to explore and understand the underlying concepts.
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Features
+
+* 🔐 User registration and login
+* 🔑 Password hashing with bcrypt
+* 🪪 Session-based authentication
+* 🛡️ Protected API routes
+* 👤 Authenticated patient information
+* 🚪 Logout and session handling
+* 🗄️ SQLite database
+* 🧩 MVC-style application structure
+* 💻 Responsive frontend interface
+
+---
+
+## 🔐 Security Concepts Explored
+
+MedVault was particularly useful for studying basic web application security concepts, including:
+
+* Password hashing
+* Authentication vs. authorization
+* Session-based authentication
+* Protected routes
+* Session management
+* Server-side validation
+* API access control
+* Secure handling of user credentials
+
+These concepts are studied from an educational perspective and the application should **not be considered production-ready or suitable for handling real medical information**.
+
+---
+
+## 🏗️ Project Structure
+
+```text
+MedVault
+│
+├── backend
+│   ├── controllers
+│   ├── middleware
+│   ├── routes
+│   ├── models
+│   └── ...
+│
+├── frontend
+│   ├── pages
+│   ├── scripts
+│   └── ...
+│
+└── README.md
+```
+
+---
+
+## 🛠️ Technologies
 
 ### Frontend
 
-* HTML5
-* CSS3
+* HTML
+* CSS
 * Bootstrap 5
-* Vanilla JavaScript
+* JavaScript
 * SweetAlert2
 
 ### Backend
 
 * Node.js
 * Express.js
-* SQLite3
+* SQLite
 * bcrypt
-* express-session
+* Sessions
 
-### Architecture
-
-* MVC (Model–View–Controller)
+> These technologies are included to document the project's implementation. My primary learning focus with MedVault was understanding the underlying web and security concepts rather than claiming advanced proficiency with the entire stack.
 
 ---
 
-## 🎯 Project Goals
+## 🎯 Learning Objectives
 
-This project is intended to:
+Through MedVault, I explored:
 
-* Learn full-stack web development through real-world implementation.
-* Practice clean and scalable software architecture.
-* Build secure authentication and session management.
-* Explore web application security concepts in a controlled environment.
-* Continuously improve through iterative development.
+```text
+Web Application
+      │
+      ├── Authentication
+      │
+      ├── Authorization
+      │
+      ├── Sessions
+      │
+      ├── Password Security
+      │
+      ├── REST APIs
+      │
+      ├── Database Interaction
+      │
+      └── Application Architecture
+```
 
----
-
-## 🤖 AI Transparency
-
-This project is developed with the assistance of AI as a software engineering mentor and pair programmer.
-
-AI is used to:
-
-* Discuss software architecture and design decisions.
-* Explain programming concepts.
-* Review and improve code quality.
-* Suggest best practices.
-* Assist with repetitive implementation tasks.
-
-Every feature is reviewed, understood, tested, and integrated manually before becoming part of the project. The objective is to learn software engineering principles—not simply generate code.
-
----
-
-## 🔒 Security Research
-
-MedVault also serves as a personal security learning environment.
-
-The application is intentionally used to study and understand topics such as:
-
-* Authentication & Authorization
-* Session Management
-* Session Hijacking
-* Session Fixation
-* Cookie Security
-* Password Hashing
-* Input Validation
-* OWASP-inspired web security concepts
-
-All security testing is performed **only against this self-owned application in a local development environment** for educational purposes.
-
----
-
-## 📌 Roadmap
-
-### ✅ Phase 1
-
-* Authentication System
-* Session Management
-* Patient Dashboard
-
-### 🚧 Phase 2
-
-* Patient Profile Management
-* Appointment Management
-* Medical Records
-* Prescriptions
-
-### 📅 Future
-
-* Doctor Portal
-* Admin Dashboard
-* Role-Based Access Control (RBAC)
-* File Uploads
-* Email Notifications
-* Audit Logging
-* API Documentation
-* Docker Deployment
+The project helped me become more familiar with the **theory and structure behind secure web applications**, while also showing me the areas of backend development that I still need to learn more deeply.
 
 ---
 
 ## ⚠️ Disclaimer
 
-This project is intended for educational and portfolio purposes. Although it follows production-oriented development practices, it is **not intended for handling real patient data** in its current state and should not be considered production-ready without additional security, testing, compliance, and deployment work.
+The project was developed with substantial AI assistance and is presented transparently as a learning project.
 
 ---
 
-## 📜 License
+## 📌 Project Status
 
-This project is licensed under the MIT License.
+**Completed as a learning project.**
+
+The project is not actively being developed and is kept as a reference for the web application and security concepts explored during development.
